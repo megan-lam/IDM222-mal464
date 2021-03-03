@@ -1,0 +1,375 @@
+/*fonts*/
+@font-face{
+    font-family: 'nunitosans';
+    src: url(../fonts/nunitosans/nunitosans-regular-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'nunitosans';
+    src: url(../fonts/nunitosans/nunitosans-italic-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face{
+    font-family: 'nunitosans';
+    src: url(../fonts/nunitosans/nunitosans-black-webfont.woff2) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'nunitosans';
+    src: url(../fonts/nunitosans/nunitosans-blackitalic-webfont.woff2) format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face{
+    font-family: 'lato';
+    src: url(../fonts/lato/lato-regular-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'lato';
+    src: url(../fonts/lato/lato-italic-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face{
+    font-family: 'lato';
+    src: url(../fonts/lato/lato-bold-webfont.woff2) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'lato';
+    src: url(../fonts/lato/lato-bolditalic-webfont.woff2) format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face{
+    font-family: 'proxima';
+    src: url(../fonts/proximanova/proxima-nova-reg-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'proxima';
+    src: url(../fonts/proximanova/proxima-nova-bold-webfont.woff2) format('woff2');
+    font-weight:bold;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'proxima';
+    src: url(../fonts/proximanova/proxima-nova-xbold_1-webfont.woff2) format('woff2');
+    font-weight: bolder;
+    font-style: normal;
+}
+/*HOME*/
+body{
+    background-color: white;
+    padding-bottom: 4rem;
+}
+h1,h2{
+    color: #0c0a2f;
+    font-family: 'nunitosans', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+h1.intro_text{
+    color: #eeede8;
+    font-family: 'proxima';
+    font-weight: bolder;
+    font-size: 3.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    padding: 4rem 2rem 0;
+}
+h2.line{
+    color: #ddff9c;
+    font-family: 'proxima';
+    font-weight: bolder;
+    font-size: 1.25rem;
+}
+.view{
+    color: #ddff9c;
+    font-family: 'nunitosans';
+    font-style: italic;
+    font-size: 1.3rem;
+    float: left;
+    margin: 0 auto;
+    padding-left: 2rem;
+}
+h3{
+    font-family: 'lato', Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul.navbar, li.nav {
+    color: #0c0a2f;
+    display: inline;
+    font-family: 'nunitosans';
+    font-weight: bold;
+    font-size: 1rem;
+    font-style: italic;
+    list-style: none;
+    margin-right: .2rem;
+    position: relative;
+    bottom: 2.7rem;
+    float: right;
+    right: 2%;
+}
+.heading{
+    background-color: #0c0a2f;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    object-fit: fill;
+    height: 90px;
+}
+.logo{
+    bottom: .5rem;
+    height: 50px;
+    margin-left: .2rem;
+    padding: 1.6rem;
+    position: relative;
+    width: 50px;
+}
+div.nav{
+    text-transform: uppercase;
+}
+.home{
+    background-color: #0c0a2f;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+}
+/*RESUME*/
+h1.name{
+    color: #0c0a2f;
+    font-family: 'nunitosans';
+    font-weight: bold;
+    font-size: 2rem;
+    font-style: italic;
+    padding: 0 3rem;
+    text-transform: uppercase;
+}
+h2.titles{
+    color: #0c0a2f;
+    font-family: 'nunitosans';
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-transform: uppercase;
+    padding: 0 3rem;
+}
+p.description{
+    color: #021a37;
+    font-family: 'lato', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding-left: 3rem;
+}
+ul.description, li{
+    color: #0c0a2f;
+    font-family: 'lato', Arial, Helvetica, sans-serif;
+    list-style: none;
+    padding-left: 2.5rem;
+}
+h3.subtitle, h3.course, h3.position{
+    color: #0c0a2f;
+    font-family: 'lato', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+ul.work, li.info{
+    color: #0c0a2f;
+    font-family: 'lato', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 1.5rem;
+}
+.res_content{
+    margin-top: 3rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 1.5rem; 
+}
+/*WORK*/
+.sl_wirefranes{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1.work_heading{
+    display: inline;
+    font-family: 'nunitosans', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+    float:left;
+    left: 2%;
+    margin-top:0;
+    margin-left: 3rem;
+    
+}
+.slate_title, .teado_title{
+    color: #0c0a2f;
+    font-family: 'nunitosans', Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 0 3rem;
+    text-transform: uppercase;
+}
+.additional_work{
+    color: #0c0a2f;
+    font-family: 'nunitosans', Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    padding: 0 3rem;
+    text-transform: uppercase;
+
+}
+p.copy{
+    color: #94a2a6;
+    font-family: 'nunitosans', Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    margin-top:0;
+    text-transform: uppercase;
+    padding:0 3rem;
+
+}
+.slate_pic, .teado_pic, .additional_pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+.slate_pic{
+    padding-top: 2rem;
+}
+.additional_pic{
+    margin-bottom: 1rem;
+}
+p.about{
+    color: #0c0a2f;
+    font-family: 'lato';
+    font-size: 1rem;
+    line-height: 23px;
+    margin-top: 0;
+    padding: 0 3rem;
+}
+
+/*SLATE PAGE*/
+h1.sl_heading{
+    color: #0c0a2f;
+    font-family: 'nunitosans';
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 0 3rem;
+    text-transform: uppercase;
+}
+div.case_content{
+    color: #0c0a2f;
+    font-family: 'lato';
+    font-size: 1rem;
+    line-height: 23px;
+    margin: 0 auto;
+    max-width: 70%;
+    text-indent: 25px;
+    padding: 0 3rem;
+}
+.sl_pics{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:325px;
+}
+/*TEADO*/
+h1.teado_heading{
+    color: #0c0a2f;
+    font-family: 'nunitosans';
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 0 3rem;
+    text-transform: uppercase;
+}
+.teado_pics{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+/*ABOUT ME*/
+h1.about_heading{
+    color: #0c0a2f;
+    font-family: 'nunitosans';
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    padding: 0 1.5rem;
+}
+h2.about_heading2{
+    color: #0c0a2f;
+    font-family: 'nunitosans';
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    color: #0c0a2f;
+    max-width: 70%;
+
+    padding: 0 1.5rem;
+}
+.pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+p.about_me{
+    color: #0c0a2f;
+    font-family: 'lato', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 23px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    text-indent: 25px;
+    padding: 0 1.5rem;
+}
+
+a.view:hover {color: white}
+
+a.resume:link {color: #eeede8;}
+a.resume:visited {color: #eeede8;}
+a.resume:hover {color: #e4ffa7;}
+
+a.work:link {color: #eeede8;}
+a.work:visited {color: #eeede8;}
+a.work:hover {color: #e4ffa7;}
+
+a.about_me:link {color: #eeede8;}
+a.about_me:visited {color: #eeede8;}
+a.about_me:hover {color: #e4ffa7;}
