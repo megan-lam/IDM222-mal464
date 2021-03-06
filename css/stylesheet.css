@@ -1,0 +1,45 @@
+@font-face{
+    font-family: 'proxima';
+    src: url(../fonts/proximanova/proxima-nova-reg-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'proxima';
+    src: url(../fonts/proximanova/proxima-nova-bold-webfont.woff2) format('woff2');
+    font-weight:bold;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'proxima';
+    src: url(../fonts/proximanova/proxima-nova-xbold_1-webfont.woff2) format('woff2');
+    font-weight: bolder;
+    font-style: normal;
+}
+/*home*/
+body{
+    background-color: black;
+}
+.nav{
+    font-family: 'proxima';
+    
+}
+.socials{
+    height: 2rem;
+    width: 2rem;
+}
+a{
+    text-decoration:none;
+}
+/*nav*/
+a.resume:link {color: #eeede8;}
+a.resume:visited {color: #eeede8;}
+a.resume:hover {color: #e4ffa7;}
+
+a.work:link {color: #eeede8;}
+a.work:visited {color: #eeede8;}
+a.work:hover {color: #e4ffa7;}
+
+a.about_me:link {color: #eeede8;}
+a.about_me:visited {color: #eeede8;}
+a.about_me:hover {color: #e4ffa7;}
