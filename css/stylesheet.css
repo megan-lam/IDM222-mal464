@@ -17,21 +17,100 @@
     font-style: normal;
 }
 /*home*/
-body{
-    background-color: black;
+  @media (min-width:300px) and (max-width:699px) {
+    body{
+     background-image: url("../images/home_small.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     }
+ }
+  @media (min-width:700px) and (max-width:1279px) {
+    body{
+     background-image: url("../images/home_mediumh.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     }
+ }
+ @media (min-width:1280px) {
+   body{
+    background-image: url("../images/home_large.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    }
 }
-.nav{
+body{
+    background-color: #0C0A2F
+}
+/* unresponsive bg
+body {
+    background-color: #0C0A2F;
+    background-image: url("../images/home_large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*/
+div.intro_text{
+    display: grid;
+    min-width: 100%;
+    max-height: 50rem;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+    margin: auto;
+    justify-items: end;
+
+}
+h1.intro{
+    grid-row-start: span 2;
+    color: whitesmoke;
     font-family: 'proxima';
-    
+    font-weight: bolder;
+    font-size: 3.75rem;
+    padding-bottom: none;
+}
+h2.intro{
+    color:#e4ffa7;
+    font-family: 'proxima';
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+h3.intro{
+    color: whitesmoke;
+    font-family: 'proxima';
+    font-weight: normal;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+div.links{
+    grid-column-end: 7;
+    grid-row-end: 5;
 }
 .socials{
+    float: right;
+    bottom: 0%;
     height: 2rem;
+    list-style: none;
+    padding-right: 1rem;
     width: 2rem;
 }
-a{
-    text-decoration:none;
+.socials li{
+    margin-top: 1.5rem;
 }
+.arrow{
+    height: 2rem;
+    width: 2rem;
+    display: inline;
+}
+
 /*nav*/
+ul.navbar li{
+    font-family: 'proxima';
+    font-size: 1.3rem;
+    display: inline-flex;
+    padding-right: 2rem;
+}
+ul.navbar{
+    float: right;
+}
 a.resume:link {color: #eeede8;}
 a.resume:visited {color: #eeede8;}
 a.resume:hover {color: #e4ffa7;}
@@ -43,3 +122,5 @@ a.work:hover {color: #e4ffa7;}
 a.about_me:link {color: #eeede8;}
 a.about_me:visited {color: #eeede8;}
 a.about_me:hover {color: #e4ffa7;}
+
+a{text-decoration:none;}
