@@ -1,8 +1,51 @@
+/* fonts */
 @font-face{
-    font-family: 'proxima';
-    src: url(../fonts/proximanova/proxima-nova-reg-webfont.woff2) format('woff2');
+    font-family: 'nunitosans';
+    src: url(../fonts/nunitosans/nunitosans-regular-webfont.woff2) format('woff2');
     font-weight: normal;
     font-style: normal;
+}
+@font-face{
+    font-family: 'nunitosans';
+    src: url(../fonts/nunitosans/nunitosans-italic-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face{
+    font-family: 'nunitosans';
+    src: url(../fonts/nunitosans/nunitosans-black-webfont.woff2) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'nunitosans';
+    src: url(../fonts/nunitosans/nunitosans-blackitalic-webfont.woff2) format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face{
+    font-family: 'lato';
+    src: url(../fonts/lato/lato-regular-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'lato';
+    src: url(../fonts/lato/lato-italic-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face{
+    font-family: 'lato';
+    src: url(../fonts/lato/lato-bold-webfont.woff2) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'lato';
+    src: url(../fonts/lato/lato-bolditalic-webfont.woff2) format('woff2');
+    font-weight: bold;
+    font-style: italic;
 }
 @font-face{
     font-family: 'proxima';
@@ -16,29 +59,60 @@
     font-weight: bolder;
     font-style: normal;
 }
+
+/*nav*/
+body{
+    margin: 0;
+}
+ul.navbar li{
+    bottom: 3.5rem;
+    font-family: 'nunitosans';
+    font-size: 1.3rem;
+    display: inline;
+    position: relative;
+    padding-left: 0;
+    padding-right: 2rem;
+}
+ul.navbar{
+    float: right;
+}
+.heading{
+    background-color: #0c0a2f;
+    background-image: url(../images/bg_heading.jpg);
+    background-size: cover;
+    object-fit: fill;
+    height: 90px;
+}
+.logo{
+    height: 50px;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    display: inline;
+    width: 50px;
+}
 /*home*/
   @media (min-width:300px) and (max-width:699px) {
-    body{
+    body.home{
      background-image: url("../images/home_small.jpg");
      background-repeat: no-repeat;
      background-size: cover;
      }
  }
   @media (min-width:700px) and (max-width:1279px) {
-    body{
+    body.home{
      background-image: url("../images/home_mediumh.jpg");
      background-repeat: no-repeat;
      background-size: cover;
      }
  }
  @media (min-width:1280px) {
-   body{
+   body.home{
     background-image: url("../images/home_large.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     }
 }
-body{
+body.home{
     background-color: #0C0A2F
 }
 /* unresponsive bg
@@ -59,21 +133,22 @@ body {
         width: 15rem;
     }
     h1.intro{
-        font-size: 2.75rem;}
+        font-size: 2.75rem;
     }   
     h2.intro h3.intro{
-        font-size: 1.25rem;
+        font-size: 1.4rem;
     }
+}
 @media (min-width: 800px){
-div.intro_text{
-    padding-top: 20%;
-}
-h1.intro{
+    div.intro_text{
+    padding-top: 15%;
+    }
+    h1.intro{
     font-size: 3.75rem;
-}
-h2.intro h3.intro{
+    }
+    h2.intro h3.intro{
     font-size: 1.3rem;
-}
+    }
 }
 div.intro_text{
 display: flex;
@@ -90,13 +165,14 @@ h1.intro{
 }
 h2.intro{
     color:#e4ffa7;
-    font-family: 'proxima';
+    font-family: 'nunitosans';
     font-weight: normal;
     margin: 0;
+    text-shadow: 10px 10px #0C0A2F;
 }
 h3.intro{
     color: whitesmoke;
-    font-family: 'proxima';
+    font-family: 'nunitosans';
     font-weight: normal;
     font-style: italic;
     margin: 0;
@@ -109,30 +185,141 @@ h3.intro{
     vertical-align: middle;
 }
 
-.socials{
+/*.socials{
     display: block;
     float: right;
-    bottom: 0%;
+    top: 15%;
     height: 2rem;
     list-style: none;
     padding-right: 2rem;
     width: 2rem;
+}*/
+.socials{
+    float: right;
 }
 .socials li{
+    display: block;
+    list-style: none;
     margin-top: 1.5rem;
-}
-
-
-/*nav*/
-ul.navbar li{
-    font-family: 'proxima';
-    font-size: 1.3rem;
-    display: inline-flex;
-    padding-top: 8%;
     padding-right: 2rem;
+    height: 2rem;
+    padding-top: 15%;
+    width: 2rem;
+} 
+/*about*/
+h1.title{
+    color: #0C0A2F;
+    font-family: 'proxima';
+    font-weight: bold;
+    font-size: 3rem;
+    font-style: italic;
+    text-transform: lowercase;
+    padding-left: 4rem;
 }
-ul.navbar{
+h2.about_heading2{
+    color: #0C0A2F;
+    font-family: 'proxima';
+    font-size: 2rem;
+}
+p.about_me{
+    color: #0C0A2F;
+    font-family: 'lato';
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+
+}
+@media (max-width: 999px){
+    h1.title{
+        padding-top: 3%
+    }
+    .pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .about_text{
+    margin-left: auto;
+    margin-right: auto;
+    width: 25rem;
+    }
+}
+@media (min-width: 1000px){
+    h1.title{
+        padding-top: 2rem;
+    }
+    /*.pic{
+    display: block;
     float: right;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    } */
+    .pics{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about_text{
+    padding-left: 4rem;
+    padding-right: 2rem;
+    width: 40rem;
+    }
+}
+/* resume */
+.name{
+    color: #0C0A2F;
+    font-family: 'proxima';
+    font-size: 3rem;
+    text-transform: lowercase;
+    padding: 0 3rem;
+}
+.info{
+    color: #0C0A2F;
+    font-family: 'lato';
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.titles{
+    color: #0C0A2F;
+    font-family: 'proxima';
+    font-size: 1.7rem;
+    font-style: italic;
+    text-transform: lowercase;
+    padding: 0 3rem;
+}
+.description{
+    color: #0C0A2F;
+    font-family: 'lato';
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding-left: 3rem;
+}
+ul.description, li{
+    padding-left: 2.5rem;
+}
+h3.subtitle, h3.course, h3.position{
+    color: #0c0a2f;
+    font-family: 'lato', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.res_content{
+    margin-top: 3rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 1.5rem; 
+}
+ul.description{
+    list-style: none;
+}
+li.info{
+    list-style: none;
 }
 a.resume:link {color: #eeede8;}
 a.resume:visited {color: #eeede8;}
