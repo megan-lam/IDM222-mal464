@@ -127,7 +127,7 @@ body {
     div.intro_text {
       font-size: 2.8rem;}
     }*/
-@media (max-width: 799px){
+@media (max-width: 899px){
     div.intro_text{
         padding-top: 30%;
         width: 15rem;
@@ -139,7 +139,7 @@ body {
         font-size: 1.4rem;
     }
 }
-@media (min-width: 800px){
+@media (min-width: 900px){
     div.intro_text{
     padding-top: 15%;
     }
@@ -168,7 +168,7 @@ h2.intro{
     font-family: 'nunitosans';
     font-weight: normal;
     margin: 0;
-    text-shadow: 10px 10px #0C0A2F;
+;
 }
 h3.intro{
     color: whitesmoke;
@@ -266,6 +266,42 @@ p.about_me{
     width: 40rem;
     }
 }
+
+/* work */
+.work_heading{
+    color: #0C0A2F;
+    font-family: 'proxima';
+    font-weight: bold;
+    font-size: 3rem;
+    font-style: italic;
+    text-transform: lowercase;
+    padding-left: 4rem;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 100%;
+    row-gap: 2rem;
+    grid-template-areas: 
+    "slate slate2 slate 3"
+    "teado teado2 teado3";
+}
+
+.slate{
+    grid-area: 'slate' 'slate2';
+}
+.slate_text{
+    grid-area: 'slate2';
+}
+
+.teado_text{
+    grid-area: 'teado';
+}
+.teado_pic{
+    grid-area: 'teado2' 'teado3';
+}
+
 /* resume */
 .name{
     color: #0C0A2F;
@@ -308,13 +344,18 @@ h3.subtitle, h3.course, h3.position{
     margin: 0;
     padding: 0;
 }
-.res_content{
+/*.res_content{
     margin-top: 3rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-right: 1.5rem; 
+} */
+.res_content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
+
 ul.description{
     list-style: none;
 }
