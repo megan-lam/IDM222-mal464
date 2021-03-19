@@ -53,18 +53,13 @@
     font-weight:bold;
     font-style: normal;
 }
-@font-face{
-    font-family: 'proxima';
-    src: url(../fonts/proximanova/proxima-nova-xbold_1-webfont.woff2) format('woff2');
-    font-weight: bolder;
-    font-style: normal;
-}
 
 /*nav*/
 body{
     margin: 0;
 }
 ul.navbar li{
+    color: white;
     bottom: 3.5rem;
     font-family: 'nunitosans';
     font-size: 1.3rem;
@@ -74,6 +69,7 @@ ul.navbar li{
     padding-right: 2rem;
 }
 ul.navbar{
+    color: white;
     float: right;
 }
 .heading{
@@ -161,7 +157,7 @@ h1.intro{
     font-family: 'proxima';
     font-weight: bolder;
     margin: 0;
-    padding-bottom: none;
+    padding-bottom: 0;
 }
 h2.intro{
     color:#e4ffa7;
@@ -207,14 +203,9 @@ h3.intro{
     width: 2rem;
 } 
 /*about*/
-h1.title{
-    color: #0C0A2F;
-    font-family: 'proxima';
-    font-weight: bold;
-    font-size: 3rem;
-    font-style: italic;
-    text-transform: lowercase;
-    padding-left: 4rem;
+.pic1{
+    max-width: 270px;
+    min-width: 100px;
 }
 h2.about_heading2{
     color: #0C0A2F;
@@ -229,22 +220,31 @@ p.about_me{
     line-height: 2.2rem;
 
 }
-@media (max-width: 999px){
-    h1.title{
+@media (max-width: 1249px){
+    h1.title_a{
         padding-top: 3%
     }
-    .pic{
+    h1.title_a{
+        color: #0C0A2F;
+        font-family: 'proxima';
+        font-weight: bold;
+        font-size: 3rem;
+        font-style: italic;
+        text-transform: lowercase;
+        padding-left: 4rem;
+    }
+    .apic{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 30%;
     }
     .about_text{
-    margin-left: auto;
-    margin-right: auto;
-    width: 25rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     }
 }
-@media (min-width: 1000px){
+@media (min-width: 1250px){
     h1.title{
         padding-top: 2rem;
     }
@@ -256,18 +256,76 @@ p.about_me{
     padding-top: 2rem;
     padding-bottom: 2rem;
     } */
-    .pics{
+    .about_container{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        height: 100vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 35% 1fr 1fr 25%;
+        grid-column-gap: 3rem;
+        max-width: 100vw;
+    }
+
+    .pic2{
+        position: relative;
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        justify-items: end;
+        margin-left: 3rem;
+    }
+    .apic{
+        padding-top: 4rem;
+        padding-left: 1rem;
+        float: right;
+    }
+    h1.title_a{
+        color: #0C0A2F;
+        font-family: 'proxima';
+        font-weight: bold;
+        font-size: 3rem;
+        font-style: italic;
+        text-transform: lowercase;
+
     }
     .about_text{
     padding-left: 4rem;
     padding-right: 2rem;
     width: 40rem;
+    grid-row-start: 1;
+    grid-row-end: span 3;
+    padding-top: 3rem;
     }
 }
 
 /* work */
+h1.title{
+    color: #0C0A2F;
+    font-family: 'proxima';
+    font-weight: bold;
+    font-size: 3rem;
+    font-style: italic;
+    text-transform: lowercase;
+    padding-left: 4rem;
+}
+p.copy{
+    color: #94a2a6;
+    font-family: 'nunitosans', Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    margin-top:0;
+    text-transform: uppercase;
+    padding:0 3rem;
+
+}
+.slate_title, .teado_title, .additional_work{
+    color: #0c0a2f;
+    font-family: 'proxima', Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 0 3rem;
+    text-transform: lowercase;
+}
 .work_heading{
     color: #0C0A2F;
     font-family: 'proxima';
@@ -277,44 +335,76 @@ p.about_me{
     text-transform: lowercase;
     padding-left: 4rem;
 }
+.about{
+    color: #0C0A2F;
+    font-family: 'nunitosans';
+    font-weight: normal;
+    font-size: 1rem;
+    text-transform: lowercase;
+    padding-left: 3em;
+    max-width: 70ch;
+}
 .container{
+    max-width: 100vw;
+}
+.slate_text{
+    display: flex;
+    flex-direction: column;
+}
+.teado_pic{
+    display: block;
+        float:right;
+    }
+    .teado_text{
+        display: block;
+        padding-top: 3rem;
+    }
+@media (max-width:899px){
+    .slate_pic{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+}
+@media (min-width: 900px){
+/*.container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: repeat (3, 1fr);
     max-width: 100%;
     row-gap: 2rem;
     grid-template-areas: 
-    "slate slate2 slate 3"
-    "teado teado2 teado3";
+    "slate slate2"
+    "teado teado2";
 }
 
-.slate{
+.slate.pic{
     grid-area: 'slate' 'slate2';
+    max-width: 600p;
 }
 .slate_text{
     grid-area: 'slate2';
 }
 
 .teado_text{
-    grid-area: 'teado';
+    grid-column-start: 1;
 }
 .teado_pic{
-    grid-area: 'teado2' 'teado3';
+    max-width: 800px;
+    grid-column-start: 2;
+    grid-column-end: span 2;
+}
 }
 
 /* resume */
-.name{
-    color: #0C0A2F;
-    font-family: 'proxima';
-    font-size: 3rem;
-    text-transform: lowercase;
-    padding: 0 3rem;
-}
 .info{
     color: #0C0A2F;
     font-family: 'lato';
     font-size: 1.2rem;
     font-weight: bold;
+    line-height: 1.8rem;
 }
 .titles{
     color: #0C0A2F;
@@ -329,7 +419,7 @@ p.about_me{
     font-family: 'lato';
     font-weight: normal;
     font-size: 1.2rem;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
     padding-left: 3rem;
 }
 ul.description, li{
@@ -351,9 +441,26 @@ h3.subtitle, h3.course, h3.position{
     margin-right: auto;
     padding-right: 1.5rem; 
 } */
+
 .res_content{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    max-width: 70ch;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 3rem;
+}
+
+/* teado and slate */
+.case_content{
+color: #0C0A2F;
+font-family: 'nunitosans'sans-serif;
+font-weight: normal;
+font-size: 1.2rem;
+line-height: 2.1rem;
+max-width: 70ch;
+margin: 0 auto;
+text-indent: 25px;
+padding: 0 3rem;
 }
 
 ul.description{
@@ -361,6 +468,9 @@ ul.description{
 }
 li.info{
     list-style: none;
+}
+a{
+    text-decoration: none;
 }
 a.resume:link {color: #eeede8;}
 a.resume:visited {color: #eeede8;}
@@ -373,5 +483,4 @@ a.work:hover {color: #e4ffa7;}
 a.about_me:link {color: #eeede8;}
 a.about_me:visited {color: #eeede8;}
 a.about_me:hover {color: #e4ffa7;}
-
-a{text-decoration:none;}
+}
